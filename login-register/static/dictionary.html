@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>English Dictionary by iStudy!</title>
+    <link rel="stylesheet" href = "style/dictionary.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <a href ="/content.html" class = "logo"> iStudy! </a>
+
+            <label class ="menu-icon" for ="menu-btn">
+                <span class="nav-icon"></span>
+
+            </label>
+            <!--Menu Page-->
+            <ul class ="menu">
+                <li> <a href ="/content.html" class="#main">Home</a></li>
+                <li> <a href ="/flashcard.html" class ="#flashcard">FlashCards</a></li>
+                <li> <a href ="/MathQuiz.html">Math Quiz</a></li>
+                <li> <a href ="/dictionary.html">Dictionary</a></li>
+                
+            </ul>
+            <a href="login.html" class="hey">Logout</a>
+        </nav>
+    </section>
+
+    <section>
+        <form class="searchForm">
+            <h1 style = "color:#00BC7E;">Dictionary!</h1>
+            <input type = "search" name = "searchBox" id = "searchBox" placeholder = "Search here!">
+            <input type = "button" name = "submit" id = "submit" value = "submit" onclick = "wordSearch()">
+            <input type = "reset" value = "reset" onclick = "reloadPage()">
+
+            <script>
+                var input = document.getElementById("searchBox");
+                input.addEventListener("keydown", function(event){
+                    if(event.keyCode === 13){
+                        event.preventDefault();
+                        document.getElementById("submit").click();
+                    }
+                })
+            </script>
+        </form>
+
+        <div class = "searchResult" id = "searchResult">
+            <div>
+                <h1>Word</h1>
+                <p id = "word"></p>
+            </div>
+            <div>
+                <h1>Definition</h1>
+                <p id = "definition"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src = "scripts/dictionary.js"></script>
+     
+</body>
+
+</html>

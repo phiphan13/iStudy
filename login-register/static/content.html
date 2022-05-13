@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style/content.css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+   
+</head>
+<body>
+    <!-- Start of Content Page -->
+
+    <!--Navigation Bar-->
+    <section id="main">
+        <nav>
+            <a href ="/content.html" class = "logo"> iStudy! </a>
+
+            <label class ="menu-icon" for ="menu-btn">
+                <span class="nav-icon"></span>
+
+            </label>
+            <!--Menu Page-->
+            <ul class ="menu">
+                <li> <a href ="/content.html" class="#main">Home</a></li>
+                <li> <a href ="/flashcard.html" class ="#flashcard">FlashCards</a></li>
+                <li> <a href ="/MathQuiz.html">Math Quiz</a></li>
+                <li> <a href ="/dictionary.html">Dictionary</a></li>
+                
+            </ul>
+            <a href="login.html" class="hey">Logout</a>
+        </nav>
+    </section>
+    
+    <div class="about-skill-heading">
+        <h2>  Are you ready to study? </h2>
+    </div>
+    <section id="contents"> 
+		<!-- Skill Text -->
+		<div class="content-text">
+
+			<!-- skill-box-container-->
+			<div class="content-container">
+                <div class="a-text-box">
+                    <div class="a-text">
+                        <p>Need to refresh your memory?</p>
+                        <p>
+                            From making your own flashcards to quizzes, you'll be preped for your next test!
+                        </p>
+                    </div>
+                </div>
+
+			</div>
+		</div>
+
+		<div class="skill-img">
+			<img src="assets/skills1.png"/>
+		</div>
+	</section>
+
+    <div class="about-skill-heading">
+        <h2>  Let's get Started! </h2>
+        <p>Choose What You Want to Make! </p>
+    </div>
+
+    <section id="study"> 
+		<!-- Skill Text -->
+		<div class="study-text">
+
+			<!-- skill-box-container-->
+			<div class="study-container">
+            
+                <div class="a-text-box2">
+                    <div class="a-text2">
+                        <p>
+                            <button class="buttons" onclick="document.location='/flashcard.html'">> Make FlashCards</button>
+                        </p>
+                    </div>
+                </div>
+
+               <div class="a-text-box2">
+                    <div class="a-text2">
+                        <p>
+                            <button class="buttons" onclick="document.location='/dictionary.html'">> Dictionary</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="a-text-box2">
+                    <div class="a-text2">
+                        <p>
+                            <button class="buttons" onclick="document.location='/MathQuiz.html'">> Math Quiz</button>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+		</div>
+
+	</section>
+
+    <script src='content.js'></script>
+</body>
+</html>

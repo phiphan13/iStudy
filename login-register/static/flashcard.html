@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Links -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width, inital-scale=1.0">
+       
+        <link rel="stylesheet" href="style/flashcard.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>Flashcard</title>
+    </head>
+    <body>
+
+        <!-- Navigation Bar-->
+        <section id="main">
+            <nav>
+                <a href ="/content.html" class = "logo"> iStudy! </a>
+    
+                <label class ="menu-icon" for ="menu-btn">
+                    <span class="nav-icon"></span>
+    
+                </label>
+                <!--Menu Page-->
+                <ul class ="menu">
+                    <li> <a href ="/content.html" class="#main">Home</a></li>
+                    <li> <a href ="/flashcard.html" class ="#flashcard">FlashCards</a></li>
+                    <li> <a href ="/MathQuiz.html">Math Quiz</a></li>
+                    <li> <a href ="/dictionary.html">Dictionary</a></li>
+                    
+                </ul>
+                <a href="login.html" class="hey">Logout</a>
+            </nav>
+        </section>
+
+
+        <!-- Body Container-->
+        <div class="main-container">
+            <div class="start-container">
+                <h1>FlashCards!</h1>
+                <button onclick="showQuestions()" class="add-button"> Add Card!</button>
+            </div>
+
+        <!-- Questions Container -->
+            <div class="question-container">
+                <form>
+                    <label>Questions?</label>
+                    <svg onclick="hideQuestions()" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg> <br>
+
+        <!-- Create text box for user to store questions-->
+                      <textarea id="question" maxlength="280"></textarea>
+                </form>
+
+                <form>
+        <!-- Create text box for user to store answers-->
+                    <label for="text" maxlength="280">Answers!</label><br>
+                    <textarea id ="answer"></textarea>
+                </form>
+
+                <button onclick="saveFlashcard()" class="add-button2">Save Flashcard!</button>
+            </div>
+            
+            <div class="save-container"></div>
+        </div>
+    
+        <script src="scripts/flashcard.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="style/mathQuiz.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <title>Math Quiz</title>
+    </head>
+    <body>
+      <section id="main">
+        <nav>
+            <a href ="/content.html" class = "logo"> iStudy! </a>
+
+            <label class ="menu-icon" for ="menu-btn">
+                <span class="nav-icon"></span>
+
+            </label>
+            <!--Menu Page-->
+            <ul class ="menu">
+                <li> <a href ="/content.html" class="#main">Home</a></li>
+                <li> <a href ="/flashcard.html" class ="#flashcard">FlashCards</a></li>
+                <li> <a href ="/MathQuiz.html">Math Quiz</a></li>
+                <li> <a href ="/dictionary.html">Dictionary</a></li>
+                
+            </ul>
+            <a href="login.html" class="hey">Logout</a>
+        </nav>
+    </section>
+  
+    <section id="MathQuiz">
+      <h1>Math Quiz</h1>
+      <hr>
+      <center>
+          <h3 id="ques">Click Next To Start!</h3>
+          <input id="ans" type="text" placeholder="Enter your answer">
+          <br>
+          <br>
+          <input onclick="check();" type="button" value="CHECK ANSWER">&nbsp; &nbsp;
+          <input onclick="next();" type="button" value="NEXT">
+          <input onclick="checky();" type="button" value="SHOW ANSWER">
+          <br>
+          <br>
+          <p id="pablo"></p>
+          <p id="score">Score: 0</p>
+        
+          
+          <emojie style="font-size: 200px;"></emojie><br>
+          <p id="luis"></p>
+        
+        </center>
+
+    </section>
+      <script type="text/javascript" src="scripts/mathQuiz.js"></script>
+   
+    
+    </body>
+    
+</html>
